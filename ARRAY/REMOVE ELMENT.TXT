@@ -1,0 +1,38 @@
+EXAMPLES
+
+1) input
+    num=[2,3,4,2,5]
+    val=2
+2) input
+    num=[2,3,4,3,5]
+    val=3
+
+APPROACH USED
+
+We use two indices
+ i=scan array from start to end
+ k= marks free position
+
+ALGORITHIM
+1) start WITH K=0
+2) For each i 
+    if nums[i]!=val:
+    place it num[k]
+    increment K
+3)At the end k=number of valid elements
+
+why this method 
+
+    overwrite
+    one passing
+
+iteration
+k=0,val=2
+
+i=0:i=[0]=[1,2,3,2,1]=1
+i=1:i=[1]=[1,3,3,2,1]=2 skipped
+1=2:i=[2]=[1,2,3,2,1]=3
+i=3:i=[3]=[1,2,3,2,1]=2 skipped
+i=4:i=[4]=[1,2,3,2,1]=1
+
+[1,3,4] 
