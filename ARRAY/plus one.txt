@@ -1,0 +1,12 @@
+input=[1,2,3]
+output=[1,2,4]
+
+input=[1,2,9]
+ouput=[1,3,0]
+
+approach used
+-digit by digit simulation
+-start from last digit
+- Add 1
+-if becomes set 0 and 1 to next digit
+-contiues left unitll there is no carry
