@@ -1,3 +1,19 @@
 array default method to find maximize
     arr=[12,7,20,75,51]
     print(max(arr))
+
+in brute force method 
+we can do simple  by just pritning
+
+print(len(arr))
+
+we do in optimal solution
+
+first we initialize largest with index lement of 0
+using for loop iteration
+
+if number inidex grester than orevious elements unitll last 
+we print largest element
+
+
+This is O(n) time and O(1) space → optimal.
