@@ -1,0 +1,6 @@
+PATTERNS
+1. Sliding Window( Subarray/substring sums, maximum/minimum in a range, repeated elements.)
+2. Two Pointers(Sorted arrays, finding pairs/triplets, removing duplicates)
+3. Prefix Sum/Difference Array(Range sum queries, subarray divisible problems)
+4. Binary Search(Minimize/maximize problems, scheduling, thresholds)
+5. Sorting+Greedy(Intervals, minimizing/maximizing resources)
