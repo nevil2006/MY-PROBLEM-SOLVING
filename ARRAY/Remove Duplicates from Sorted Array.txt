@@ -1,0 +1,7 @@
+Sorts the array (to make sure duplicates are together).
+
+Removes duplicates in-place — meaning it doesn’t create a new list, it reuses nums.
+
+Returns the number of unique elements k.
+
+Ensures the first k elements of nums contain the unique values.
