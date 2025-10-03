@@ -13,3 +13,12 @@ for i in range(len (arr)):          second_largest = arr[0]
                                              elif num > second_largest and num < largest:
     largest = num                                        second_largest = num
 print(largest)                             print(second_largest)
+
+
+| Iteration | num (current element) | Condition checked              | Action taken                            | largest | second_largest |
+| --------- | --------------------- | ------------------------------ | --------------------------------------- | ------- | -------------- |
+| 1         | 1                     | 1 > 1? No                      | None                                    | 1       | 1              |
+| 2         | 2                     | 2 > 1? Yes                     | Update: second_largest = 1, largest = 2 | 2       | 1              |
+| 3         | 1                     | 1 > 2? No; 1 > 1 and 1 < 2? No | None                                    | 2       | 1              |
+| 4         | 5                     | 5 > 2? Yes                     | Update: second_largest = 2, largest = 5 | 5       | 2              |
+| 5         | 1                     | 1 > 5? No; 1 > 2 and 1 < 5? No | None                                    | 5       | 2              |
