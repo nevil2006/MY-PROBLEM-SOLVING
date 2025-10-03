@@ -1,0 +1,15 @@
+IT USES LOGIC OF FIRST LARGEST AND IT USE LOGIC TO PRINT THE SEDON LARGEST 
+
+COMPARISION
+
+FIRST LARGEST                       SECOND LARGEST
+arr=[1,2,1,5,1]                     arr = [1, 2, 1, 5, 1]
+largest=arr[0]                      largest = arr[0]
+for i in range(len (arr)):          second_largest = arr[0]
+
+        if arr[i]>largest:          for num in arr:
+            largest=arr[i]                  if num > largest:
+                                                        second_largest = largest
+                                             elif num > second_largest and num < largest:
+    largest = num                                        second_largest = num
+print(largest)                             print(second_largest)
