@@ -1,0 +1,29 @@
+they only check the element exist or not so we used linear search
+If array was sorted, we’d use Binary Search (O(log N)).
+
+If multiple queries of X were asked, we’d use HashSet for O(1) lookup.
+Iteration Example
+
+Let’s run with input:
+
+5 10
+7 3 5 2 1
+
+
+N = 5, X = 10
+
+A = [7, 3, 5, 2, 1]
+
+Python checks step by step:
+
+7 == 10 → False
+
+3 == 10 → False
+
+5 == 10 → False
+
+2 == 10 → False
+
+1 == 10 → False
+
+Since no match found → "NO"
