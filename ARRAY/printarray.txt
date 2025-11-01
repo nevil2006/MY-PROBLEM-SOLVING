@@ -1,0 +1,109 @@
+problem is to print the arr
+first a simple person you think it is easier to do but the diffuclty is when print arr is different output 
+for example
+
+input
+arr=[10,20,30,40]
+output
+10,20,30,40
+
+but when you actually used the print approach it print with brackets and commas
+
+to solve we linear approach,Single Pass Iterative Pattern
+
+it peforms opertaing on each element in that array
+
+start to end 
+
+time o(n)
+space o(1)
+
+1 beginner
+
+for i in arr:
+    print(i, end=" ")
+
+10 20 30 40
+
+2. using *
+
+print(*arr)
+
+10 20 30 40
+
+3.Using join() (String Joining)
+
+print(",".join(map(str, arr)))
+
+10,20,30,40
+
+🔹 Concept:
+
+    map(str, arr) → convert each element to string
+
+    ",".join() → join them with commas
+
+4.Using for loop with indexes
+
+for i in range(len(arr)):
+    print(arr[i], end=" ")
+
+10 20 30 40
+
+5.using while loop
+
+i = 0
+while i < len(arr):
+    print(arr[i], end=" ")
+    i += 1
+
+10 20 30 40
+
+if want vertical line
+
+print(*arr, sep="\n")
+
+10
+20
+30
+40
+
+if want martix
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# Row-wise (horizontal)
+for row in matrix:
+    print(*row)
+
+1 2 3
+4 5 6
+7 8 9
+
+
+Column-wise (vertical)
+
+for i in range(len(matrix[0])):
+    for row in matrix:
+        print(row[i], end=" ")
+    print()
+
+1 4 7
+2 5 8
+3 6 9
+
+
+Pattern: Single Pass Iterative Pattern
+
+This pattern is used because:
+
+You need to perform an operation on every element (printing each).
+
+The task does not require searching, sorting, or skipping elements.
+
+The operation is O(n) — perfect for small, direct operations.
+
+
+Type	Complexity	Reason
+Time	O(n)	You visit each element once
+Space	O(1)	No extra memory except loop variable 
