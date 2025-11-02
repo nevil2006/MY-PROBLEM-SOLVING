@@ -1,0 +1,5 @@
+in i have linear approach 
+beacuse we wna to iterate each elemtn and we use linear serach  approach and we and use this so we perform operation at each element
+
+if you want bruteforce you can do with sort and pirnting zero index as min  element and last index (n-1) as max element.
+
