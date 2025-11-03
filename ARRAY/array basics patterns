@@ -1,6 +1,55 @@
-PATTERNS
-1. Sliding Window( Subarray/substring sums, maximum/minimum in a range, repeated elements.)
-2. Two Pointers(Sorted arrays, finding pairs/triplets, removing duplicates)
-3. Prefix Sum/Difference Array(Range sum queries, subarray divisible problems)
-4. Binary Search(Minimize/maximize problems, scheduling, thresholds)
-5. Sorting+Greedy(Intervals, minimizing/maximizing resources)
+DSA PATTERNS (Summary Points)
+
+1. Sliding Window
+Use two pointers to create a moving window over array or string.
+Efficient for subarray/substring problems.
+Keeps track of sum, count, or frequency.
+
+Common uses:
+Maximum/minimum sum subarray of size k
+Longest substring without repeating characters
+
+2. Two Pointers
+Two indices move through the array (either same or opposite direction).
+Works best on sorted arrays or linked lists.
+
+Common uses:
+Pair/triplet sum problems
+Remove duplicates
+Reverse arrays or linked lists
+
+3. Prefix Sum / Difference Array
+Precompute cumulative sums or differences.
+Makes range queries O(1) time.
+
+Common uses:
+Range sum queries
+Subarray divisible problems
+Range update (using difference array)
+
+4. Binary Search
+Repeatedly divide search space into halves.
+Works on sorted data or monotonic functions.
+
+Common uses:
+Searching in sorted array
+Finding threshold, boundary, or minimum/maximum satisfying condition
+Scheduling or resource allocation problems
+
+5. Sorting + Greedy
+Sort the input and make locally optimal (greedy) decisions.
+
+Common uses:
+Interval scheduling
+Activity selection
+Minimizing/maximizing resources
+Coin change, job sequencing
+
+6. Linear Search
+Sequentially check each element.
+Simple and works on unsorted data.
+
+Common uses:
+Finding min/max elements
+Checking presence of an element
+Counting occurrences
