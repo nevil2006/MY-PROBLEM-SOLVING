@@ -1,0 +1,5 @@
+Linear Search
+
+this start and doing we intialtu ze even_coutn and odd_count as zero and move and ext and and intlalaixze foe loop and then move to if the ven
+conition if number %2 and then return 0  means evena dn elese not odd_count
+
