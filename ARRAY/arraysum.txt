@@ -1,0 +1,13 @@
+we use linear Search PATTERN
+
+first we intilaize total as 0
+
+using for array iterate each array and add with array element
+then return the total
+
+| Iteration | Current Element | Total So Far |
+| --------- | --------------- | ------------ |
+| 1         | 1               | 0 + 1 = 1    |
+| 2         | 2               | 1 + 2 = 3    |
+| 3         | 3               | 3 + 3 = 6    |
+| 4         | 4               | 6 + 4 = 10   |
