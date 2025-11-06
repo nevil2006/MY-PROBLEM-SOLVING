@@ -1,0 +1,29 @@
+Approach: Linear Traversal + Right Shift
+
+We want to insert a value inside an array without losing any elements.
+So, we first create extra space, then shift elements, and finally insert the value.
+
+Steps:
+
+Append a dummy element at the end → this increases array size.
+
+Start from the end, move each element one step to the right until we reach the index.
+
+Insert val at index.
+
+Return the updated array.
+
+Because arrays store elements contiguously in memory.
+So if we insert in the middle, we must shift elements to make room.
+
+We cannot insert directly, otherwise it overwrites existing values.
+
+Right-Shift & Insert Pattern
+
+Because:
+
+We insert inside an array (not append)
+
+So we need to shift right
+
+And shifting must be right → left to avoid overwriting
