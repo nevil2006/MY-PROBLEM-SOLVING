@@ -1,0 +1,24 @@
+Start from the first element of the array.
+
+Go through the array one element at a time.
+
+For each element:
+
+Check whether the element is equal to x.
+
+If we find arr[i] == x, then:
+
+Return the index i, because we found the element.
+
+If we finish checking the whole array and do not find x:
+
+Return -1 (meaning x is not present inside the array).
+
+approach used is Linear search
+
+Index	Value	Compare with x	Result
+0	    10	    10 == 5? 	Continue
+1     	8	    8 == 5? 	Continue
+2	   30	    30 == 5? 	Continue
+3	   4	    4 == 5? 	Continue
+4	   5	    5 == 5? 	Return 4
