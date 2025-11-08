@@ -1,0 +1,62 @@
+input
+a = [11, 7, 1, 13, 21, 3, 7, 3]
+b = [11, 3, 7, 1, 7]
+
+output
+true
+
+logic
+We need to check whether every element of array b exists in array a, including how many times it appears.
+So, we count how many times each value occurs in a[], and then subtract counts when matching values in b[].
+If any required value in b[] is missing or count becomes negative → b[] is not a subset.
+
+pattern used 
+
+Frequency / Hash Map Pattern
+
+Why this pattern works:
+
+The array may contain duplicates.
+
+We must ensure counts also match, not just existence.
+
+Linear search alone can produce wrong results when duplicates are involved.
+
+So counting occurrences with a dictionary ensures accuracy.
+
+  How to Identify Hash Pattern From the Question
+
+When you see this type of line in a problem:
+
+"Check if b[] is a subset of a[]"
+
+You should ask two questions in your mind:
+
+ Does the order matter?
+
+No → subset does not care about order.
+
+Are there duplicates in the arrays?
+
+Yes → the examples show repeated values, such as:
+
+iteration
+
+Step 1: Build Frequency Map of a
+Element	Count
+11	1
+7	2
+1	1
+13	1
+21	1
+3	2
+
+Step 2: Check elements in b
+b Element	Check in freq?	Available Count?	Action	Updated freq
+11	yes 	1 > 0 	freq[11] -= 1	11:0
+3	yes 	2 > 0 	freq[3] -= 1	3:1
+7	yes 	2 > 0   freq[7] -= 1	7:1
+1	yes 	1 > 0 	freq[1] -= 1	1:0
+7	yes 	1 > 0 	freq[7] -= 1	7:0
+
+No element failed →  b is subset of a
