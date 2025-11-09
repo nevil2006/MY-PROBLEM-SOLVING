@@ -1,0 +1,36 @@
+input
+arr = [1, 2, 3, 4, 5]
+output
+[5,1,2,3,4]
+Logic (in simple words):
+
+Take the last element of the array and move it to the front.
+Shift all other elements one position to the right.
+
+Before: [1, 2, 3, 4, 5]
+Take last = 5
+Shift right
+After: [5, 1, 2, 3, 4]
+
+Pattern Used:
+
+Right Shift Pattern
+
+Why This Pattern Works:
+
+Rotation does not change the order of elements.
+It only shifts positions.
+So we:
+
+Save the last element
+
+Shift elements to the right
+
+Place the saved element in front
+
+Time Complexity:
+
+O(n) (because we shift n elements)
+
+Space Complexity:
+O(1) (no extra array used)
