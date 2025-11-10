@@ -1,0 +1,23 @@
+An array[]
+
+two numbers x and y
+count how many x in arr
+count how many y in arr
+
+input
+arr=[1,1,2,2,3,3,4,4,4,4,3]
+x=4
+y=5
+
+count 
+4 appreas 4 times
+5 appreas 1 times
+
+Patternused
+ hashmap
+
+ time Complexity
+ 0(n)
+
+ space Complexity
+ o(1)
