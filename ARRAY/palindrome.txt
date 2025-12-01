@@ -1,0 +1,13 @@
+problem plaindrome array check
+input:array of integer
+ouput: true/false
+
+logic 
+convert each number to string
+retirn if odnt mathc flase adn if mathc true
+
+pattern used
+
+single pass linear check pattern
+
+space complexity=o(1)
