@@ -1,0 +1,58 @@
+Problem:
+
+Take elements from the array in alternate order, starting from index 0.
+
+Meaning:
+
+Take element at index 0
+
+Skip index 1
+
+Take index 2
+
+Skip index 3
+
+…
+
+Example:
+
+arr = [1, 2, 3, 4, 5]
+
+Indexes → Elements
+0 → 1 ✔ (take)
+1 → 2 ✘ (skip)
+2 → 3 ✔ (take)
+3 → 4 ✘ (skip)
+4 → 5 ✔ (take)
+
+Output → 1 3 5
+
+ 4. Logic (In Simple Words)
+
+Here you write your OWN words, very simple:
+
+Start from index 0
+
+Pick one element
+
+Skip next
+
+Pick next
+
+Continue till end
+
+Store picked ones in list
+
+One clear paragraph. No big sentences.
+
+5. Pattern Used
+
+Which pattern is this problem using?
+
+Linear Traversal Pattern
+
+ 6. Why This Pattern Works
+
+Explain in one line:
+
+We check every element once from left to right and decide to take it or skip it. That’s why linear traversal works.
